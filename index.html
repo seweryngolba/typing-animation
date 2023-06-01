@@ -9,7 +9,17 @@
   </head>
   <body>
     <div class="container">
-      <h1>Hello world</h1>
+      <h1>Hello <span class="autotype"></span></h1>
     </div>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+    <script>
+      let typed = new Typed(".autotype", {
+        strings: ["World", "America", "Europe"],
+        typeSpeed: 150,
+        backSpeed: 150,
+        loop: true,
+      });
+    </script>
   </body>
 </html>
